@@ -1,0 +1,352 @@
+body {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+article {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 45px 50px 50px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .list__block {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.container .list__block-check {
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.container .list__block-check::before {
+  content: "";
+  padding-right: 20px;
+  margin-right: 5px;
+  background: url("img/check.svg") no-repeat right center;
+}
+
+header,
+footer {
+  background: #445161;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 69px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+  margin-bottom: 30px;
+}
+
+.screenshots h3 {
+  margin-bottom: 45px;
+}
+
+h4 {
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.about {
+  background: #fff;
+}
+
+.about-text {
+  max-width: 647px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+.dignity .flex-block,
+.screenshots .flex-block,
+.reviews .flex-block,
+.buy .flex-block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 575px;
+}
+
+article .article-img {
+  margin-right: 5px;
+  height: 35px;
+  width: 35px;
+}
+
+article .article-screen {
+  margin-right: 10px;
+}
+
+article .review {
+  background: #ebebeb;
+  border-radius: 5px;
+  padding: 15px 10px 0px 15px;
+  position: relative;
+}
+
+article .review::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20%;
+  border: 10px solid transparent;
+  border-right: 10px solid #ebebeb;
+}
+
+article .review p {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+article .review .author {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #989898;
+}
+
+article .article-reviews {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin-right: 15px;
+}
+
+.reviews article {
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.buy .flex-block {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.price__block {
+  background: #445161;
+  border-radius: 5px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  padding-bottom: 20px;
+}
+
+.price__block-title {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.price__block-price {
+  background: #fff;
+  font-size: 40px;
+  line-height: 30px;
+  text-align: center;
+  color: #445162;
+  padding: 25px 15px 15px 15px;
+  width: 98%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.price__block-list {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 15px 8px 15px 20px;
+}
+
+.price__block-btn {
+  background: #fff;
+  margin: 0 auto;
+  padding: 15px 8px 15px 20px;
+  width: 80%;
+  color: #445161;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.price__block-btn:hover {
+  background: #989898;
+  color: #445162;
+}
+
+.flex-block.footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 758px;
+  margin: 0 auto;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+.footer__form-input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.footer__form-text {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.footer__form-btn {
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  width: 145px;
+  margin: 0 auto;
+  color: #445162;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.footer__form-btn:hover {
+  background: #989898;
+  color: #445162;
+}
+
+.contact__info {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contact__info-skype::before {
+  content: "";
+  padding-right: 20px;
+  margin-right: 5px;
+  background: url("/img/skype icon.svg") no-repeat right center;
+}
+
+.contact__info-phone::before {
+  content: "";
+  padding-right: 20px;
+  margin-right: 5px;
+  background: url("/img/phone.svg") no-repeat right center;
+}
+
+.contact__info-icq::before {
+  content: "";
+  padding-right: 20px;
+  margin-right: 5px;
+  background: url("/img/icq.svg") no-repeat right center;
+}
+
+.contact__info-mail::before {
+  content: "";
+  padding-right: 20px;
+  margin-right: 5px;
+  background: url("/img/email icon.svg") no-repeat right center;
+}
+
+.contact__info-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.contact__info div {
+  margin-bottom: 20px;
+}
+
+.copy {
+  text-align: center;
+  padding: 15px;
+  color: #445162;
+  background: #f2f2f2;
+}

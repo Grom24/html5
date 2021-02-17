@@ -1,0 +1,287 @@
+$dark: #445161;
+$grey: F5F5F5;
+body {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    cursor: pointer;
+}
+p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+article {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1272px;
+    margin: 0 auto;
+    padding: 45px 50px 50px 50px;
+    box-sizing: border-box;
+    .list__block {
+        font-size: 20px;
+        line-height: 23px;
+        &-check {
+            color: #fff;
+            font-size: 20px;
+            line-height: 23px;
+            &::before {
+                content: "";
+                padding-right: 20px;
+                margin-right: 5px;
+                background: url("img/check.svg") no-repeat right center;
+            }
+        }
+    }
+}
+header,
+footer {
+    background: $dark;
+}
+h1 {
+    font-size: 60px;
+    line-height: 69px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    margin-bottom: 30px;
+}
+.screenshots h3 {
+    margin-bottom: 45px;
+}
+h4 {
+    color: #445161;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.flex-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.about {
+    background: #fff;
+}
+.about-text {
+    max-width: 647px;
+    p {
+        margin-bottom: 10px;
+    }
+}
+.dignity .flex-block,
+.screenshots .flex-block,
+.reviews .flex-block,
+.buy .flex-block {
+    flex-wrap: wrap;
+}
+article {
+    flex-basis: 50%;
+    padding-bottom: 20px;
+    display: flex;
+    min-width: 575px;
+    .article-img {
+        margin-right: 5px;
+        height: 35px;
+        width: 35px;
+    }
+    .article-screen {
+        margin-right: 10px;
+    }
+    .review {
+        background: #ebebeb;
+        border-radius: 5px;
+        padding: 15px 10px 0px 15px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 20%;
+            border: 10px solid transparent;
+            border-right: 10px solid #ebebeb;
+        }
+        p {
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+        .author {
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: #989898;
+        }
+    }
+    .article-reviews {
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        margin-right: 15px;
+    }
+}
+.reviews article {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.buy .flex-block {
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.price__block {
+    background: #445161;
+    border-radius: 5px;
+    flex-basis: 300px;
+    padding-bottom: 20px;
+    &-title {
+        color: #fff;
+        padding: 10px;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &-price {
+        background: #fff;
+        font-size: 40px;
+        line-height: 30px;
+        text-align: center;
+        color: #445162;
+        padding: 25px 15px 15px 15px;
+        width: 98%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    &-list {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 15px 8px 15px 20px;
+    }
+    &-btn {
+        background: #fff;
+        margin: 0 auto;
+        padding: 15px 8px 15px 20px;
+        width: 80%;
+        color: #445161;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 5px;
+        &:hover {
+            background: #989898;
+            color: #445162;
+        }
+    }
+}
+.flex-block.footer {
+    justify-content: space-between;
+    max-width: 758px;
+    margin: 0 auto;
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    &-input {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: none;
+    }
+    &-text {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    &-btn {
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        width: 145px;
+        margin: 0 auto;
+        color: #445162;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        &:hover {
+            background: #989898;
+            color: #445162;
+        }
+    }
+}
+.contact__info {
+    color: #fff;
+    margin-top: 10px;
+    &-skype {
+        &::before {
+            content: "";
+            padding-right: 20px;
+            margin-right: 5px;
+            background: url("/img/skype icon.svg") no-repeat right center;
+        }
+    }
+    &-phone {
+        &::before {
+            content: "";
+            padding-right: 20px;
+            margin-right: 5px;
+            background: url("/img/phone.svg") no-repeat right center;
+        }
+    }
+    &-icq {
+        &::before {
+            content: "";
+            padding-right: 20px;
+            margin-right: 5px;
+            background: url("/img/icq.svg") no-repeat right center;
+        }
+    }
+    &-mail {
+        &::before {
+            content: "";
+            padding-right: 20px;
+            margin-right: 5px;
+            background: url("/img/email icon.svg") no-repeat right center;
+        }
+    }
+    &-soc {
+        display: flex;
+        align-items: center;
+        margin-top: 45px;
+    }
+}
+.contact__info div {
+    margin-bottom: 20px;
+}
+.copy {
+    text-align: center;
+    padding: 15px;
+    color: #445162;
+    background: #f2f2f2;
+}
